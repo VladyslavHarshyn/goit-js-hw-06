@@ -9,13 +9,13 @@ const output = document.querySelector('#name-output');
 
 input.addEventListener('input', event => {
 
-    output.textContent = event.target.value;
     
         if (event.target.value.length > 0) {
             output.innerHTML = event.target.value;
             return;
         }
     
-    output.innerHTML = 'Anonymous';
+    output.textContent = event.target.value;
+    output.textContent = 'Anonymous';
     
 });

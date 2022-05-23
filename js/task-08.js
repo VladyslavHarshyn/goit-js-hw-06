@@ -12,11 +12,12 @@ form.addEventListener('submit', event => {
     const object = {
         email: email.value,
         password: password.value,
+        
     };
 
     if (email.value === "" || password.value === "") {
         return alert("You forgot to put all your info into form...");
     }
-
+    console.log(object)
     event.currentTarget.reset();
 })
